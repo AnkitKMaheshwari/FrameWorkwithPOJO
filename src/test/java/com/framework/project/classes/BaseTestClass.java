@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
@@ -16,7 +17,9 @@ public class BaseTestClass {
 
 	@BeforeMethod
 	public void setUp() throws FileNotFoundException, IOException{
+		
 		Log.dynamicApp(System.getProperty("user.dir")+"\\src\\test\\resources\\Logs\\","gmail");
+		BasicConfigurator.configure();
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
