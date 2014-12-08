@@ -1,0 +1,5 @@
+2014-12-08 11:31:00,606 INFO  [Log] in try block 
+2014-12-08 11:31:12,314 INFO  [Log] Screenshotdate with modified date=08-12-2014 11_31_12 
+2014-12-08 11:31:12,314 INFO  [Log] //src//test//resources//Screenshots//login08-12-2014 11_31_12.png 
+2014-12-08 11:31:24,752 INFO  [Log] ====================Inbox (1) 
+2014-12-08 11:31:24,752 INFO  [Log] Login successfull 

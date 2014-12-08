@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54049" started-at="2014-11-21T09:57:18Z" finished-at="2014-11-21T09:58:12Z">
+  <suite name="Default suite" duration-ms="36512" started-at="2014-12-08T06:09:58Z" finished-at="2014-12-08T06:10:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54049" started-at="2014-11-21T09:57:18Z" finished-at="2014-11-21T09:58:12Z">
-      <class name="com.framework.project.classes.GmailLogin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.project.classes.GmailLogin@6581ed9e]" name="setUp" is-config="true" duration-ms="35702" started-at="2014-11-21T15:27:18Z" finished-at="2014-11-21T15:27:54Z">
+    <test name="Default test" duration-ms="36512" started-at="2014-12-08T06:09:58Z" finished-at="2014-12-08T06:10:34Z">
+      <class name="com.framework.project.classes.GmailLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.framework.project.classes.GmailLoginTest@35175422]" name="setUp" is-config="true" duration-ms="17556" started-at="2014-12-08T11:39:58Z" finished-at="2014-12-08T11:40:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginTest()[pri:0, instance:com.framework.project.classes.GmailLogin@6581ed9e]" name="verifyLoginTest" duration-ms="17566" started-at="2014-11-21T15:27:54Z" finished-at="2014-11-21T15:28:11Z">
+        <test-method status="PASS" signature="verifyLoginTest()[pri:0, instance:com.framework.project.classes.GmailLoginTest@35175422]" name="verifyLoginTest" duration-ms="17905" started-at="2014-12-08T11:40:15Z" finished-at="2014-12-08T11:40:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.project.classes.GmailLogin@6581ed9e]" name="tearDown" is-config="true" duration-ms="743" started-at="2014-11-21T15:28:11Z" finished-at="2014-11-21T15:28:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.project.classes.GmailLoginTest@35175422]" name="tearDown" is-config="true" duration-ms="1026" started-at="2014-12-08T11:40:33Z" finished-at="2014-12-08T11:40:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.framework.project.classes.GmailLogin -->
+      </class> <!-- com.framework.project.classes.GmailLoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
