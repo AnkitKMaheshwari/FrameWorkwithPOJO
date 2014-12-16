@@ -1,20 +1,60 @@
 package com.framework.project.util;
 
 import java.io.FileInputStream;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.Set;
 
-public class ReadFromPropertyFile {
+import org.openqa.selenium.WebDriver;
 
-	public String fetchUrl() throws FileNotFoundException, IOException{
-		Properties prop = new Properties();
+import com.framework.project.beans.FrameWorkUtilityPOJO;
+import com.framework.project.beans.LoginPOJO;
+import com.framework.project.beans.TestLinkPOJO;
+
+public class ReadFromPropertyFile {
+	Properties properties = new Properties();
+	FrameWorkUtilityPOJO frameWorkUtilityPOJO;
+	LoginPOJO loginPOJO;
+
+	public Properties read() throws FileNotFoundException, IOException{
+		
 		Log.info("in try block");
-		prop.load(new FileInputStream("src/test/resources/Data/First.properties"));
+		properties.load(new FileInputStream("src/test/resources/Data/Config.properties"));
 		System.out.println("File read");
-		String url = prop.getProperty("Url");
-		System.out.println("))))))))))))))))))))))))"+url);
-		return url;
+		return properties;
 	}
+	
+	public FrameWorkUtilityPOJO getFrameWorkUtility() throws FileNotFoundException, IOException{
+		properties = this.read();
+		frameWorkUtilityPOJO = new FrameWorkUtilityPOJO();
+		System.out.println("____________"+properties.getProperty("browser"));
+		frameWorkUtilityPOJO.setStrExplorer(properties.getProperty("browser"));
+		System.out.println("____________"+properties.getProperty("application"));
+		frameWorkUtilityPOJO.setStrAppUrl(properties.getProperty("application"));
+		System.out.println("UUUUUUUUUU"+properties.getProperty("username"));
+		return frameWorkUtilityPOJO;
+	}
+	public LoginPOJO getLoginDeatils() throws FileNotFoundException, IOException{
+		properties = this.read();
+		loginPOJO = new LoginPOJO();
+		System.out.println("UUUUUUUUUU"+properties.getProperty("application"));
+		loginPOJO.setStrUserName(properties.getProperty("username"));
+		
+		loginPOJO.setStrPassword(properties.getProperty("password"));
+		return loginPOJO;
+	}
+	public TestLinkPOJO getTestLinkPOJO() throws FileNotFoundException, IOException{
+		properties=this.read();
+		TestLinkPOJO testLinkPOJO =new TestLinkPOJO();
+		testLinkPOJO.setStrTestProject(properties.getProperty("testProject"));
+		testLinkPOJO.setStrTestPlan(properties.getProperty("testPlan"));
+		testLinkPOJO.setStrTestCase(properties.getProperty("testCase"));
+		testLinkPOJO.setStrBuild(properties.getProperty("build"));
+		return testLinkPOJO;
+	}
+	
+	
+	
 }

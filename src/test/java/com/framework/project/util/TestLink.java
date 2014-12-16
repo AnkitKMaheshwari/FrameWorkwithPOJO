@@ -1,4 +1,4 @@
-package com.framework.project.util;
+/*package com.framework.project.util;
 
 import testlink.api.java.client.TestLinkAPIClient;
 import testlink.api.java.client.TestLinkAPIException;
@@ -13,3 +13,4 @@ public class TestLink {
   api.reportTestCaseResult(TestProject,TestPlan,TestCase,build,Notes,Result);
  }
 }
+*/

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [A]">
+  <test name="FirefoxTest(failed)">
+    <classes>
+      <class name="com.framework.project.classes.GmailLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLoginTest"/>
+        </methods>
+      </class> <!-- com.framework.project.classes.GmailLoginTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [A] -->

@@ -45,6 +45,14 @@
 <packaging>hpi</packaging>
 <description>This plug-in integrates Jenkins to TestLink</description>
 
+
+<dependency>
+	<groupId>org.codehaus.jackson</groupId>
+	<artifactId>jackson-mapper-asl</artifactId>
+	<version>1.9.9</version>
+</dependency>
+
+
 	</dependencies>
 	
 	
